@@ -31,7 +31,6 @@ int main() {
 	double num1, num2;
 	string Fname, Lname;
 	int Operator;
-	int result;
 	
 	MyFunction;
 	cout << "Enter your name and surname" << endl;
@@ -51,8 +50,7 @@ int main() {
 	switch (Operator) {
 
 	case 1:
-		result = num1 + num2;
-		cout << "The result is " << result << endl;
+		cout << AddNumbers(num1, num2) << endl;
 		break;
 
 	case 2:
@@ -60,24 +58,20 @@ int main() {
 			cout << "You can't divide by zero please enter other number " << endl;
 			cin >> num2;
 
-			result = num1 / num2;
-			cout << "The result is " << result << endl;
+			cout << DivideNumbers(num1, num2) << endl;
 		}
 		else {
-			result = num1 / num2;
-			cout << "The result is " << result << endl;
+			cout << DivideNumbers(num1, num2) << endl;
 		
 		}
 		break;
 
 	case 3:
-		result = num1 - num2;
-		cout << "The result is " << result << endl;
+		cout << SubNumbers(num1, num2) << endl;
 		break;
 
 	case 4:
-		result = num1 * num2;
-		cout << "The result is " << result << endl;
+		cout << MultiplyNumbers(num1, num2) << endl;
 		break;
 
 	
